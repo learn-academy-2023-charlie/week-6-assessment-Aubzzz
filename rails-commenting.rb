@@ -6,7 +6,7 @@
 
 # FILE: app/controller/blog_posts_controller.rb
 
-# ---1)
+# ---1) This line is labelling the class 'BlogPostController' and shows that it sia 
 class BlogPostsController < ApplicationController
   def index
     # ---2)

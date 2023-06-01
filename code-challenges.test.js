@@ -1,5 +1,8 @@
 // ASSESSMENT 6: JavaScript Coding Practical Questions with Jest
 
+const { it } = require("node:test")
+const { describe } = require("yargs")
+
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
 // If you get stuck, please leave comments to help us understand your thought process
@@ -20,6 +23,13 @@ const hitchhikersCharacters = [
   { name: "arthur dent", occupation: "a radio employee" }
 ]
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
+
+// describe
+// it
+// expect
+
+
+
 
 // b) Create the function that makes the test pass.
 
