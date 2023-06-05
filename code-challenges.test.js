@@ -1,7 +1,7 @@
 // ASSESSMENT 6: JavaScript Coding Practical Questions with Jest
 
-const { it } = require("node:test")
-const { describe } = require("yargs")
+// const { it } = require("node:test")
+// const { describe } = require("yargs")
 
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
@@ -24,14 +24,43 @@ const hitchhikersCharacters = [
 ]
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
 
-// describe
-// it
-// expect
+// describe("peopleList", () => {
+//     it("creates a function that takes an array of objects and returns an array with a sentence about each person with their name capitilized", () => {
+//     expect(peopleList(hitchhikersCharacters)).toEqual("Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee.")
+//  })
+// })
 
+//Red test- Good Failure
+// FAIL  ./code-challenges.test.js
+// peopleList
+//   ✕ creates a function that takes an array of objects and returns an array with a sentence about each person with their name capitilized (1 ms)
 
+// ● peopleList › creates a function that takes an array of objects and returns an array with a sentence about each person with their name capitilized
+
+//   ReferenceError: peopleList is not defined
 
 
 // b) Create the function that makes the test pass.
+// PseudoCode
+// Input: hitchhikerCharacters
+// Output : ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
+// Process: create a function called peopleList and pass in a parameter of an array. Create another variable called newList to store the information in so that we can return a  Iterate through the function using a .map method (?) or a for loop
+
+
+
+const peopleList = (array) => {
+  let newList => {
+    for(i=0; i< array.length)
+  }
+
+}
+
+
+
+
+
+
+
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 

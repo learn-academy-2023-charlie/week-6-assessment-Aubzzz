@@ -10,13 +10,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: The cohort model would have the foreign key. To add a foreign key, there is a command that can be run, that I cannot actively recall.
 
-Researched answer:
+Researched answer: In order to add a foreign key, the first step would be to generate a migration and run the command AddCohortIdToStudents, so that we can the foreign key to the Student model to link it to the Cohort model. The command would look like "rails generate migration AddCohortIdToStudents cohort:reference". Then we would have to change the database schema by using the change method and migration code, to add the cohort_id to students table. Then, run the "rails db:migrate" code to update the schema. Then go into the Student model and asssociate the Student Model with the Cohort model by typing "belongs_to :cohort".
 
 2. Which RESTful routes must always be passed params? Why?
 
 Your answer: I do not know the answer to this question, but will get back with a more researched answer.
 
-Researched answer:
+Researched answer: The routes that must be passed params include: Create/Post, Update/PUT/PATCH, Show/Get and Destroy/DELETE. In order to get the outcome that a user would want, the important information to ensure that happens needs to be passed into these routes. Without parameters, you cannot create something, update, show or delete something. The system will not know what data or information to perform the action with.
 
 3. Name three rails generator commands. What is created by each?
 
@@ -34,18 +34,18 @@ Researched answer: There are many options that rails generator commands can be f
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
-action: "GET" location: /students - This will retrieve a source 
+action: "GET" location: /students - Contorller method = Index, this would list all of the students in the database 
 
-action: "POST" location: /students
+action: "POST" location: /students- Controller Method = Create, this would create new information/data that would need to be stored with the student in the database
 
-action: "GET" location: /students/new
+action: "GET" location: /students/new = Controller method is new, this would create a new student, no data is added, just the position of a new student is
 
-action: "GET" location: /students/2
+action: "GET" location: /students/2 - controller method-show, this would "show" in a view the student who is located at id 2
 
-action: "GET" location: /students/2/edit
+action: "GET" location: /students/2/edit - controller method- edit, this would allow the user to modify the student at id 2
 
-action: "PATCH" location: /students/2
+action: "PATCH" location: /students/2 - Controlller method-update, this would change the data using new parameters input for the student located at id 2
 
-action: "DELETE" location: /students/2
+action: "DELETE" location: /students/2 - Controller method-delete, this would delete the studen info at student id 2
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. [Here is a resource](https://www.atlassian.com/agile/project-management/user-stories) to help you create your user stories.
