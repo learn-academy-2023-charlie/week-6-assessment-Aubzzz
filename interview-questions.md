@@ -49,3 +49,24 @@ action: "PATCH" location: /students/2 - Controlller method-update, this would ch
 action: "DELETE" location: /students/2 - Controller method-delete, this would delete the studen info at student id 2
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. [Here is a resource](https://www.atlassian.com/agile/project-management/user-stories) to help you create your user stories.
+
+
+1. As a work center manager, I want to be able to contact team members with preset notifications so that I can reach them in various locations without having to recall them completely.
+
+2. As a park ranger that collects data from wildlife trackers, I want to be able to store data in a database that provides accessibility to other ranger teams.
+
+3. As a tourist in the park, I want to choose hikes, see important information for entry to ensure safety and maximum enjoyable experience in a new place.
+
+4. As an educator for a non-profit, I want to be able to track and see trends in progress made in students to understand if the criteria is being implemented correctly. 
+
+5. As a board member for a non-profit, I want to be able to view a donor list that accurately describes and shows where donations currently stand.
+
+6. As a student, I want to be able to access assignments, grades and request forms to keep better track of progreess and open communication channels with an instructor. 
+
+7. As a work center manager, I want to be able to track shop projects to ensure maximum time efficiency. 
+
+8. As a family member, I want to be able to contact multiple family members at a time, to see everyone at once and share something immediate.
+
+9. As a naturalist on whale watching tours, I want to be able to take recent whale sightings and input data so that it's accessible to myself and other networks, and provides trends of frequently sighted locations.
+
+10. As a naturalist on a whale watching tour, I want to be able to input a photo of a dorsal fin and have it compared to a stored data base so that I may ID specific animals faster.

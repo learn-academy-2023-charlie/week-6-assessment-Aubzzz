@@ -6,25 +6,25 @@
 
 # FILE: app/controller/blog_posts_controller.rb
 
-# ---1) This line is labelling the class 'BlogPostController' and shows that it sia 
+# ---1) This line is labelling the class 'BlogPostController' and defines a class that can utilize methods and behavior defined in a parent class Application Controller, Inheritance
 class BlogPostsController < ApplicationController
   def index
-    # ---2) This line is creating a container, known as the post variable, that will store all of the BlogPosts
+    # ---2) This line is creating an instance variable, known as the post variable, that will store all of the BlogPost data and display the list
     @posts = BlogPost.all
   end
 
-  # ---3) This line creates a method that is called show
+  # ---3) This lines shows a controller method that is called show
   def show
     @post = BlogPost.find(params[:id])
   end
 
-  # ---4) This line creates a method that is called new
+  # ---4) This line is a method to display a form for user (to create a post)
   def new
     @post = BlogPost.new
   end
 
   def create
-    # ---5) this line is assigning a new BlogPost called blog_post_params to the post variable. BlogPost is followed by the .create method that is followed by parameters that give the code a bit of information
+    # ---5) this line is assigning a new BlogPost instance called blog_post_params to the post variable. BlogPost is followed by the .create method that is followed by parameters that give the code a bit of information
     @post = BlogPost.create(blog_post_params)
     if @post.valid?
       redirect_to blog_post_path(@post)
@@ -38,7 +38,7 @@ class BlogPostsController < ApplicationController
 
   def update
     @post = BlogPost.find(params[:id])
-    # ---7) The instance variable is using a method called .update to modify the object by using the parameter passed of blog_post_params. This will update the variable post, in the database
+    # ---7) The instance variable is using a GET request method called .update to modify the object by using the parameter passed of blog_post_params. This will update the variable post, in the database
     @post.update(blog_post_params)
     if @post.valid?
       redirect_to blog_post_path(@post)
